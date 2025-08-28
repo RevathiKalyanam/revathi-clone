@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Create New Account</h2>
+    <form id="signupForm">
+      <input type="text" id="firstName" placeholder="First Name" required />
+      <input type="text" id="surName" placeholder="Surname" required />
+      <input type="text" id="mobile" placeholder="Mobile Number" required />
+      <input type="password" id="password" placeholder="New Password" />
+
+      <label>Date of Birth</label>
+      <div class="dob">
+        <select id="day"></select>
+        <select id="month"></select>
+        <select id="year"></select>
+      </div>
+
+      <label>Gender</label>
+      <div class="gender">
+        <label><input type="radio" name="gender" value="Male" /> Male</label>
+        <label><input type="radio" name="gender" value="Female" /> Female</label>
+        <label><input type="radio" name="gender" value="Other" /> Other</label>
+      </div>
+
+      <button type="submit">Sign Up</button>
+      <div id="errors"></div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
